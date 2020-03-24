@@ -1,9 +1,9 @@
-# v2ray_server
-v2ray反向代理脚本，该脚本中的v2ray脚本及config.json文件均来自v2ray官网
+For personal use.
 
-该脚本为v2ray反向代理脚本，作用为穿透内网，非科学上网脚本
+To be updated. 
 
-使用方法：
+
+
 
 1、vps服务端（vps服务端脚本中已包含v2ray官方下载脚本，不需要单独下载v2ray）：
 
