@@ -1,0 +1,61 @@
+{  
+  "reverse":{  
+    "portals":[  
+      {  
+        "tag":"portal",
+        "domain":"shiytian.top"        
+      }
+    ]
+  },
+  "inbounds":[
+    {  
+      
+      "tag":"tunnel", 
+      "port":12321,
+      "protocol":"vmess",
+      "settings":{  
+        "clients":[  
+          {  
+            "id":"554c2baa-f8a0-1265-1669-c4eaa888496a",
+            "alterId":64
+          }
+        ]
+      }
+    },
+    
+    {  
+      "tag": "interconn",
+      "port":6543,
+      "protocol":"vmess",
+      "settings":{  
+        "clients":[  
+          {  
+            "id":"98dc41dd-cfe5-3be7-17c8-1fe722a29f98",
+            "alterId":64
+          }
+        ]
+      }
+    }
+  ],
+  "routing":{   
+    "rules":[  
+      {  
+        "type":"field",
+        "inboundTag":[  
+          "interconn"
+        ],
+        "outboundTag":"portal"
+      },
+      {  
+        "type":"field",
+        "inboundTag":[  
+          "tunnel"
+        ],
+        "domain":[  
+          "full:shiytian.top"
+        ],
+        "outboundTag":"portal"
+      }
+    ]
+  }
+}
